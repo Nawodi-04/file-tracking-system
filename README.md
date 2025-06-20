@@ -40,6 +40,6 @@ A simple, frontend-only web application to manage and track physical file storag
 
 | Name | Role |
 |------|------|
-| Chethani Nawodya | Project Manager & Reviewer |
-| Aruni Nimesha | Developer DevOps (GitHub Actions) |
-| PathumiMalsha | Developer & DevOps (GitHub Actions) |
+| Chethani Nawodya | Project Manager, DevOps & Reviewer |
+| Aruni Nimesha | Developer, DevOps & Reviewer|
+| Pathumi Malsha | Developer, DevOps & Reviewer |
