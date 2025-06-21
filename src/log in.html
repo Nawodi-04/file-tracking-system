@@ -26,7 +26,7 @@
 
             <div class="form-inner">
                 <!-- Login Form -->
-                <form action="index-main.html" method="post" class="login">
+                <form action="#" method="post" class="login">
                     <div class="field">
                         <input type="text" name="nic" placeholder="NIC" required>
                     </div>
@@ -111,6 +111,10 @@
                     passwordField.type = "password";
                 }
             });
+        }
+        // Simulate login by redirecting to dashboard
+        function redirectToDashboard() {
+            window.location.href = "index-main.html"; 
         }
     </script>
 </body>
