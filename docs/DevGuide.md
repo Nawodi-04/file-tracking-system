@@ -40,9 +40,9 @@ Each feature or component was developed in a separate branch to ensure clean ver
 ## File Structure
 
 file-tracking-system/
-├── index.html
 |── src/
-│ |─- login.html
+│ |─-index.html
+| |-- login.html
 | ├── index-main.html
 │ |── index-AddDocket.html
 | ├── Search.html

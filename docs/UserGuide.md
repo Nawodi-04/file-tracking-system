@@ -5,7 +5,7 @@ Welcome to the **File Tracking System**. This guide will help end-users understa
 
 ## Login & Signup
 
-- Open `log in.html`.
+- Open `login.html`.
 - Enter your NIC and password to log in.
 - New users can sign up by entering First Name, Last name, NIC, and password.
 
