@@ -40,9 +40,9 @@ Each feature or component was developed in a separate branch to ensure clean ver
 ## File Structure
 
 file-tracking-system/
-├── src/
-│ ├── index..html
-│ |─- log in.html
+├── index.html
+|── src/
+│ |─- login.html
 | ├── index-main.html
 │ |── index-AddDocket.html
 | ├── Search.html
@@ -52,6 +52,7 @@ file-tracking-system/
 ├── .github/
 │ └── workflows/
 │ └── html-check.yml
+| |__ deploy.yml
 ├── CHANGELOG.md
 ├── README.md
 ├── LICENSE
