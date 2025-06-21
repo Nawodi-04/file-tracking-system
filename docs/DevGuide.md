@@ -15,7 +15,7 @@ Each feature or component was developed in a separate branch to ensure clean ver
 | Branch Name        | Purpose                                 | File Created                         |
 |--------------------|------------------------------------------|--------------------------------------|
 | `login/register`   | Develop login and signup functionality   | `login.html`                         |
-| `welcome`          | Create and style the welcome page        | `welcome.html`                       |
+| `welcome`          | Create and style the welcome page        | `index.html`                       |
 | `addfileform`      | Add file form development                | `index-main.html`                    |
 | `indexAddDocket`   | Add File Docket form layout              | `index-AddDocket.html`               |
 | `searchbar`        | Build the search UI                      | `search.html`                        |
@@ -40,12 +40,12 @@ Each feature or component was developed in a separate branch to ensure clean ver
 ## File Structure
 
 file-tracking-system/
-├── login.html
-├── welcome.html
-├── index-main.html
-├── index-AddDocket.html
-├── search.html
-├── Style-FileTracking.css
+├── src/
+│ ├── index..html
+│ |─- log in.html
+| ├── index-main.html
+│ |── index-AddDocket.html
+| ├── Search.html
 ├── docs/
 │ ├── UserGuide.md
 │ └── DevGuide.md

@@ -19,8 +19,8 @@ jobs:
 
     - name: Validate HTML files
       run: |
+        tidy -e index.html || true
         tidy -e log in.html || true
-        tidy -e welcome.html || true
         tidy -e index-main.html || true
         tidy -e index-AddDocket.html || true
-        tidy -e search.html || true
+        tidy -e Search.html || true

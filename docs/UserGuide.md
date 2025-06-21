@@ -12,7 +12,7 @@ Welcome to the **File Tracking System**. This guide will help end-users understa
 
 ## Welcome Page
 
-- After logging in, you will land on `welcome.html`.
+- After logging in, you will land on `index.html`.
 - It displays a greeting message and navigation to different parts of the system:
   - Add File
   - Add New Docket
