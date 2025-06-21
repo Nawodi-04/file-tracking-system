@@ -25,8 +25,9 @@
             </div>
 
             <div class="form-inner">
+
                 <!-- Login Form -->
-                <form action="#" method="post" class="login">
+                <form onsubmit="redirectToDashboard(); return false;" class="login">
                     <div class="field">
                         <input type="text" name="nic" placeholder="NIC" required>
                     </div>
@@ -35,12 +36,10 @@
                     </div>
                     <br>
                     <div class="show-password-label">
-                        <label class="show-password-label">
+                        <label>
                             <input type="checkbox" onclick="togglePasswordVisibility('loginPassword')"> Show Password
                         </label>
                     </div>
-        
-
                     <br>
                     <div class="pass-link">
                         <a href="#">Forgot password?</a>
@@ -48,14 +47,12 @@
                     <br>
                     <div class="field btn">
                         <div class="btn-layer"></div>
-                        <input type="submit" name="login" value="Login">
+                        <input type="submit" value="Login">
                     </div>
                     <div class="signup-link">
                         Create an account <a href="#">Signup now</a>
                     </div>
-                    
                 </form>
-
 
                 <!-- Signup Form -->
                 <form action="#" method="post" class="signup" id="signupForm">
@@ -74,47 +71,47 @@
                         <input type="password" name="password" placeholder="Password" id="signupPassword" required>
                         <small>Password must be at least 8 characters and include letters, numbers, and special characters.</small>
                     </div>
-                    <br>
-                    <br>
+                    <br><br>
                     <div class="field">
                         <input type="password" name="confirm_password" placeholder="Confirm password" id="confirmPassword" required>
                     </div>
                     <br>
-
                     <div class="show-password-label">
-                        <label class="show-password-label">
+                        <label>
                             <input type="checkbox" onclick="togglePasswordVisibility('signupPassword', 'confirmPassword')"> Show Password
                         </label>
                     </div>
-                    <bt>
-
+                    <br>
                     <div class="field btn">
                         <div class="btn-layer"></div>
                         <input type="submit" name="signup" value="Signup">
                     </div>
-                    
                 </form>
 
             </div>
         </div>
     </div>
+
+    <!-- Scripts -->
     <script src="login.js"></script>
     <script src="signup.js"></script>
+
     <script>
-        // Function to toggle password visibility
+        // Toggle visibility for one or more password fields
         function togglePasswordVisibility(...fields) {
-            fields.forEach(function(fieldId) {
-                var passwordField = document.getElementById(fieldId);
-                if (passwordField.type === "password") {
-                    passwordField.type = "text";
+            fields.forEach(function (fieldId) {
+                const field = document.getElementById(fieldId);
+                if (field.type === "password") {
+                    field.type = "text";
                 } else {
-                    passwordField.type = "password";
+                    field.type = "password";
                 }
             });
         }
+
         // Simulate login by redirecting to dashboard
         function redirectToDashboard() {
-            window.location.href = "index-main.html"; 
+            window.location.href = "index-main.html"; // Your Add File page
         }
     </script>
 </body>
