@@ -142,39 +142,7 @@ form-group2{
   text-align: center;
 }
 
-/*
-#leftsection{
-	float: left;
-	width:60%;
-}
 
-
-#rightsection{
-	margin-right:0.02vw;
-	margin-top:6vh;
-	padding:0.5vw;
-}
-
-#rightsection button {
-  margin: 0.5vw ;
-  width: 15%;
-  padding: 8px 8px;
-  background-color: #01A58D;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-#btn-clearr{
-  background-color: white;
-  color: #01A58D;
-  border:0.5px solid #01A58D;
-}
-
-#rightsection button:hover {
-  background-color: #005246;
-}*/
 
 .container {
     position: relative;
