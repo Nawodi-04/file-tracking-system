@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">Login Form</div>
+            <div class="title signup">Signup Form</div>
+        </div>
+
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slider-tab"></div>
+            </div>
+
+            <div class="form-inner">
+
+                <!-- Login Form -->
+                <form onsubmit="redirectToDashboard(); return false;" class="login">
+                    <div class="field">
+                        <input type="text" name="nic" placeholder="NIC" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="password" placeholder="Password" id="loginPassword" required>
+                    </div>
+                    <br>
+                    <div class="show-password-label">
+                        <label>
+                            <input type="checkbox" onclick="togglePasswordVisibility('loginPassword')"> Show Password
+                        </label>
+                    </div>
+                    <br>
+                    <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <br>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="signup-link">
+                        Create an account <a href="#">Signup now</a>
+                    </div>
+                </form>
+
+                <!-- Signup Form -->
+                <form action="index-main.html" method="post" class="signup" id="signupForm">
+                    <div class="field-group">
+                        <div class="field">
+                            <input type="text" name="firstname" placeholder="First Name" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="lastname" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="nic" placeholder="NIC" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" name="password" placeholder="Password" id="signupPassword" required>
+                        <small>Password must be at least 8 characters and include letters, numbers, and special characters.</small>
+                    </div>
+                    <br><br>
+                    <div class="field">
+                        <input type="password" name="confirm_password" placeholder="Confirm password" id="confirmPassword" required>
+                    </div>
+                    <br>
+                    <div class="show-password-label">
+                        <label>
+                            <input type="checkbox" onclick="togglePasswordVisibility('signupPassword', 'confirmPassword')"> Show Password
+                        </label>
+                    </div>
+                    <br>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" name="signup" value="Signup">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="login.js"></script>
+
+    <script>
+        // Toggle visibility for one or more password fields
+        function togglePasswordVisibility(...fields) {
+            fields.forEach(function (fieldId) {
+                const field = document.getElementById(fieldId);
+                if (field.type === "password") {
+                    field.type = "text";
+                } else {
+                    field.type = "password";
+                }
+            });
+        }
+
+        // Simulate login by redirecting to dashboard
+        function redirectToDashboard() {
+            window.location.href = "index-main.html"; // Your Add File page
+        }
+    </script>
+</body>
+
+</html>
