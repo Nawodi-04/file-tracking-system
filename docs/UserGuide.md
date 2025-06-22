@@ -23,7 +23,7 @@ Welcome to the **File Tracking System**. This guide will help end-users understa
 
 - Go to `index-main.html`.
 - Fill in:
-  - File Number
+  - File No
   - File Name
   - Number of Available Sheets
   - File Opened Year
